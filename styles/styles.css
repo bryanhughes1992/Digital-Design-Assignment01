@@ -10,7 +10,7 @@ html, body {
 }
 
 
-div.body-container {
+.body-container {
     height: 100vh;
     width: 100vw;
     display: grid;
