@@ -23,20 +23,31 @@ header {
     color: #fff;
 }
 
-nav {
+nav.nav-container {
     height: 100%;
     width: 100%;
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
 }
 
-h1.blog-title {
-    font-size: 5.5rem;
+h1 {
+    font-size: 5rem;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     text-align: left;
+    padding-left: 0.5em;
+}
+
+ul.nav-list {
+    display: block;
+}
+
+input.search-bar {
+    
 }
 
 main {
@@ -45,45 +56,45 @@ main {
     background-color: #fff;
     overflow: scroll;
     overflow-x: hidden;
+    border: solid #000 1px;
+}
+
+article {
+    width: 60vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title {
     font-family: 'Poppins', sans-serif;
-    width: 60vw;
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
     text-decoration: underline;
+    text-align: center;
 }
 .blog-para-one {
     font-family: 'Poppins', sans-serif;
-    width: 60vw;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    columns: 2;
+    line-height: 2em;
 }
 
 blockquote {
     font-family: 'Playfair Display', serif;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-align: center;
 }
 
 .blog-para-two {
     font-family: 'Poppins', sans-serif;
-    width: 60vw;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    columns: 2;
 }
 
 .blog-para-three {
     font-family: 'Poppins', sans-serif;
-    width: 60vw;
+    columns: 2;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 .form {
@@ -104,4 +115,5 @@ footer {
     background-color: #000;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    padding-top: 3em;
 }
